@@ -1,12 +1,13 @@
 // MAIN FILE (Imports del resto de archivos)
 
-// @import 'utilities/variables';
+@import 'utilities/variables';
 // @import 'utilities/functions';
-// @import 'utilities/mixins';
+@import 'utilities/mixins';
 
+@import 'base/reset';
 // @import 'base/typo';
 
-// @import 'layout/header';
+@import 'layout/header';
 // @import 'layout/footer';
 // @import 'layout/forms';
 

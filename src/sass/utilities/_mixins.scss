@@ -1,1 +1,9 @@
 // Mixins
+
+@mixin flex($display, $direction, $content, $justify, $items) {
+    display: $display;
+    flex-direction: $direction;
+    align-content: $content;
+    justify-content: $justify;
+    align-items: $items;
+}   
