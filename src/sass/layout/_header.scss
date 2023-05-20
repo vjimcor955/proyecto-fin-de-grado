@@ -1,26 +1,42 @@
 header.header {
-    background-color: $color-secundario-2;
+    background-color: $oscuro;
     width: 100%;
     height: fit-content;
-    padding: 15px 50px 15px 50px;
     @include flex(flex, column, center, space-between, center);
    
     
     img.header__logo {
-        height: 70px;
+        height: 100px;
+        padding: 15px 0px;
     }
-}
+    
+    nav.menu {
+        background-color: $claro;
+        width: 100%;
+        height: fit-content;
+        padding: 10px 550px;
+        @include flex(flex, row, center, space-between, center);
+        
+        a.menu__link {
+            color: $texto;
+            text-decoration: none;     
+        }
+    
+        img {
+            height: 40px;
+        }
+    }
 
-nav.menu {
-    background-color: $color-secundario;
-    width: 100%;
-    height: fit-content;
-    padding: 15px 575px 15px;
-    @include flex(flex, row, center, space-between, center);
-
-    a.menu__link {
-        color: #000;
-        text-decoration: none;     
+    nav.menu-lateral {
+        background-color: $claro;
+        width: 100%;
+        height: fit-content;
+        padding: 7px 100px;
+        @include flex(flex, row, center, space-between, center);
+    
+        img {
+            height: 25px;
+        }
     }
 }
 

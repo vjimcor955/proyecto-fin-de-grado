@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="sass/main.scss" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html"><img class="header__logo" alt="logo" src="img/logo.png"></a>
+      <nav class="menu">
+        <a class="menu__link" href="#">Quienes somos</a>
+        <a class="menu__link" href="#">Trabajadores</a>
+        <a class="menu__link" href="#">Plantillas</a>
+        <a href="user.html"><img src="img/icon_user.png" alt="Icono de usuario"></a>
+      </nav>
+    </header>
+
+    <div class="form-box__user">
+      <form>
+        <fieldset>
+          <legend><img src="img/icon_user.png" alt="Icono de usuario"></legend>
+          <div class="form-box-user__campo">
+            <label for="nombre">Nombre:</label>
+            <label for="apellidos">Apellidos:</label>
+            <label for="email">Correo electrónico:</label>
+            <label for="telefono">Numero de teléfono:</label>
+          </div>          
+          <div class="form-box-user__campo">
+            <input type="text" name="nombre" id="nombre">
+            <input type="text" name="apellidos" id="apellidos">
+            <input type="email" name="email" id="email">
+            <input type="number" name="telefono" id="telefono">
+          </div>          
+        </fieldset>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__menu">
+        <a class="footer__link" href="#">Accesibilidad</a>
+        <a class="footer__link" href="#">Política de privacidad</a>
+        <a class="footer__link" href="#">Aviso legal</a>
+        <a class="footer__link" href="#">Cookies</a>
+      </div>
+    </footer>
+  </body>
+</html>
+

@@ -1,0 +1,31 @@
+.form-box__login {
+    width: 100%;
+    height: 65vh;
+    @include flex(flex, column, center, center, center);    
+
+    form > fieldset {
+        text-align: center;
+        @include flex(flex, column, center, space-between, center);
+        color: $texto;
+        font-size: large;
+        gap: 15px;
+        padding: 30px 75px;
+        border-radius: 20px;
+        border: 3px solid $titulo;
+
+        legend {
+            padding: 0px 35px;
+            font-size: larger;
+        }
+
+        .form-box-login__botones {
+            @include flex(flex, column, center, center, center);
+            padding-top: 35px; 
+            gap: 20px;
+            
+            a {
+                color: $texto;
+            }
+        }  
+    }
+}

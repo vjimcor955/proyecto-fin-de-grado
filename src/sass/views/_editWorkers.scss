@@ -1,0 +1,71 @@
+.edit-workers-box {
+    @include flex(flex, row, center, center, center);
+    
+    .table-box {
+        width: 85%;
+        height: 64vh;
+        @include flex(flex, column, center, flex-start, center);
+
+        h2 {
+            color: $titulo;
+            padding: 35px 0px;
+        }
+
+        .tabla-editar-trabajadores {
+            width: 60%;
+
+            caption {
+                background-color: $oscuro;
+                color: $titulo;
+                height: 50px;
+                padding: 15px 0px;
+            }
+
+            .tabla-editar-trabajadores__titulo {
+                background-color: $principal;
+                color: $oscuro;
+                height: 40px;
+
+                th.apellidos {
+                    width: 30%;
+                }
+
+                th.nombre {
+                    width: 20%;
+                }
+
+                th.funcion {
+                    width: 25%;
+                }
+
+                th.turno {
+                    width: 25%;
+                }
+            }
+
+            .tabla-editar-trabajadores__fila {
+                text-align: center;
+                color: $texto;
+                height: 35px;
+
+
+                td.apellidos, td.funcion {
+                    background-color: $oscuro;
+                }
+
+                td.nombre, td.turno {
+                    background-color: $claro;
+                }
+            }
+
+            td > input {
+                width: 95%;
+                height: 80%;
+                padding: 5px 0px;
+                text-align: center;
+                color: $texto;
+                background-color: rgba(0, 0, 0, 0);
+            }
+        }
+    }
+}

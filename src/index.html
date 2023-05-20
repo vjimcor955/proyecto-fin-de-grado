@@ -8,20 +8,64 @@
   </head>
   <body>
     <header class="header">
-      <img class="header__logo" alt="logo" src="img/logo.png" href="#">
+      <a href="index.html"><img class="header__logo" alt="logo" src="img/logo.png"></a>
+      <nav class="menu">
+        <a class="menu__link" href="#">Quienes somos</a>
+        <a class="menu__link" href="workers.html">Trabajadores</a>
+        <a class="menu__link" href="staffs.html">Plantillas</a>
+        <a href="user.html"><img src="img/icon_user.png" alt="Icono de usuario"></a>
+      </nav>
     </header>
-    <nav class="menu">
-      <a class="menu__link" href="#">Quienes somos</a>
-      <a class="menu__link" href="#">Trabajadores</a>
-      <a class="menu__link" href="#">Plantillas</a>
-    </nav>
+
     <div class="carousel">
 
     </div>
+
     <div class="targeta-foto-texto">
       <img class="targeta-foto-texto__imagen" alt="imagen" src="img/foto.png">
-      <p class="targeta-foto-texto__texto"></p>
+      <div class="targeta-foto-texto__texto">
+        <h2>Bienvenido a Shift Manager</h2>
+        <p>Shift Manager es un gestor de trabajadores y plantillas que te ayudara y facilitara la organizacion de tanto sus horarios como sus turnos de trabajo.</p>
+      </div>
     </div>
+
+    <div class="targeta-columnas-texto">
+      <h2>Que ofrecemos</h2>
+      <div class="targeta-columnas-texto__contenido">
+        <div class="targeta-columnas-texto__texto-1">
+          <p>Podras registrar a los miembros de tu equipo de trabajo y gestionar sus tareas de forma sencilla e intuitiva.</p>
+          <a class="button">Gestionar trabajadores</a>
+        </div>
+        <div class="targeta-columnas-texto__separador"></div>
+        <div class="targeta-columnas-texto__texto-2">
+          <p>Podras crear plantillas con los trabajadores registrados y gestionar sus turnos y horarios de modo que resulte un una tarea comoda.</p>
+          <a class="button">Gestionar plantillas</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="inicio-de-sesion">
+      <h3>Inicia sesión para comenzar a hacer uso de nuestra plataforma</h3>
+      <div class="inicio-de-sesion__botones">
+        <a class="button" href="login.html">Iniciar sesion</a>
+        <div class="inicio-de-sesion__separador"></div>
+        <a class="button" href="register.html">Registrarse</a>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__newsletter">
+        <h3>Suscríbete a nuestra newsletter y mantenete informado de las últimas noticias</h3>
+        <input type="text" name="Correo electronico" id="email">
+        <input class="button" type="submit" value="Registrarse">
+      </div>
+      <div class="footer__menu">
+        <a class="footer__link" href="#">Accesibilidad</a>
+        <a class="footer__link" href="#">Política de privacidad</a>
+        <a class="footer__link" href="#">Aviso legal</a>
+        <a class="footer__link" href="#">Cookies</a>
+      </div>
+    </footer>
   </body>
 </html>
 

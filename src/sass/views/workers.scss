@@ -1,0 +1,62 @@
+.workers-box {
+    @include flex(flex, row, center, center, center);
+    
+    .table-box {
+        width: 85%;
+        height: 64vh;
+        @include flex(flex, column, center, flex-start, center);
+
+        h2 {
+            color: $titulo;
+            padding: 35px 0px;
+        }
+
+        .tabla-trabajadores {
+            width: 60%;
+
+            caption {
+                background-color: $oscuro;
+                color: $titulo;
+                height: 50px;
+                padding: 15px 0px;
+            }
+
+            .tabla-trabajadores__titulo {
+                background-color: $principal;
+                color: $oscuro;
+                height: 40px;
+
+                th.apellidos {
+                    width: 30%;
+                }
+
+                th.nombre {
+                    width: 20%;
+                }
+
+                th.funcion {
+                    width: 25%;
+                }
+
+                th.turno {
+                    width: 25%;
+                }
+            }
+
+            .tabla-plantillas__fila {
+                text-align: center;
+                color: $texto;
+                height: 35px;
+
+
+                td.apellidos, td.funcion {
+                    background-color: $oscuro;
+                }
+
+                td.nombre, td.turno {
+                    background-color: $claro;
+                }
+            }
+        }
+    }
+}

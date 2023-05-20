@@ -1,0 +1,57 @@
+.staffs-box {
+    @include flex(flex, row, center, center, center);
+    
+    .table-box {
+        width: 85%;
+        height: 64vh;
+        @include flex(flex, column, center, flex-start, center);
+
+        h2 {
+            color: $titulo;
+            padding: 35px 0px;
+        }
+
+        .tabla-plantillas {
+            width: 60%;
+
+            caption {
+                background-color: $oscuro;
+                color: $titulo;
+                height: 50px;
+                padding: 15px 0px;
+            }
+
+            .tabla-plantillas__titulo {
+                background-color: $principal;
+                color: $oscuro;
+                height: 40px;
+
+                th.nombre {
+                    width: 30%;
+                }
+
+                th.integrantes {
+                    width: 25%;
+                }
+
+                th.sector {
+                    width: 45%;
+                }
+            }
+
+            .tabla-plantillas__fila {
+                text-align: center;
+                color: $texto;
+                height: 35px;
+
+                td.nombre, td.sector {
+                    background-color: $oscuro;
+                }
+
+                td.integrantes {
+                    background-color: $claro;
+                }
+            }
+        }
+    }
+}

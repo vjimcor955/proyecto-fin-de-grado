@@ -1,0 +1,71 @@
+.edit-staffs-box {
+    @include flex(flex, row, center, center, center);
+    
+    .table-box {
+        width: 85%;
+        height: 64vh;
+        @include flex(flex, column, center, flex-start, center);
+
+        h2 {
+            color: $titulo;
+            padding: 35px 0px;
+        }
+
+        .tabla-editar-plantilla {
+            width: 60%;
+
+            caption {
+                background-color: $oscuro;
+                color: $titulo;
+                height: 50px;
+                padding: 15px 0px;
+            }
+
+            .tabla-editar-plantilla__titulo {
+                background-color: $principal;
+                color: $oscuro;
+                height: 40px;
+
+                th.id {
+                    width: 10%;
+                }
+
+                th.apellidos {
+                    width: 45%;
+                }
+
+                th.nombre {
+                    width: 25%;
+                }
+
+                th.funcion {
+                    width: 30%;
+                }
+            }
+
+            .tabla-editar-plantilla__fila {
+                text-align: center;
+                color: $texto;
+                height: 35px;
+
+
+                td.id, td.nombre {
+                    background-color: $oscuro;
+                }
+
+                td.apellidos, td.funcion {
+                    background-color: $claro;
+                }
+            }
+
+            td > input {
+                width: 95%;
+                height: 80%;
+                padding: 5px 0px;
+                text-align: center;
+                color: $texto;
+                background-color: rgba(0, 0, 0, 0);
+            }
+        }
+    }
+}

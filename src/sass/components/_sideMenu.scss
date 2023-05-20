@@ -1,0 +1,52 @@
+.menu-lateral {
+    height: 75vh;
+    width: 15%;
+    background-color: $oscuro;
+    @include flex(flex, column, center, center, center);
+    gap: 60px;
+
+    .link-menu__seleccion {
+        text-decoration: none;
+        font-weight: bold;
+        color: $titulo;
+    }
+
+    .link-menu__opcion {
+        text-decoration: none;
+        color: $texto;
+    }
+
+    .link-menu__inicio {
+        text-decoration: none;
+        color: $oscuro;
+    }
+
+    .menu-lateral__opcion {
+        width: 100%;
+        height: 60px;
+        background-color: $claro;
+        @include flex(flex, column, center, center, center);
+    }
+
+    .menu-lateral__gestionar {
+        width: 100%;
+        @include flex(flex, column, center, center, center);
+        gap: 10px;
+
+        .menu-lateral__subopcion {
+            width: 100%;
+            height: 30px;
+            background-color: $claro;
+            @include flex(flex, column, center, center, center);
+        }
+    }
+
+    .menu-lateral__inicio {
+        width: 100%;
+        height: 60px;
+        background-color: $principal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

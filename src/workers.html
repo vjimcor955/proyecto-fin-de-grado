@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="sass/main.scss" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html"><img class="header__logo" alt="logo" src="img/logo.png"></a>
+      <nav class="menu-lateral">
+        <img src="img/icon_menu.png" alt="Icono de menu">
+        <a href="user.html"><img src="img/icon_user.png" alt="Icono de usuario"></a>
+      </nav>
+    </header>
+
+    <div class="workers-box">
+      <nav class="menu-lateral">
+        <div class="menu-lateral__gestionar">
+            <div class="menu-lateral__opcion"><a href="workers.html" class="link-menu__seleccion">Gestionar trabajadores</a></div>
+            <div class="menu-lateral__subopcion"><a href="#" class="link-menu__opcion">Registrar nuevo trabajador</a></div>
+            <div class="menu-lateral__subopcion"><a href="editWorkers.html" class="link-menu__opcion">Editar trabajadores</a></div>
+        </div>
+        <div class="menu-lateral__opcion"><a href="staffs.html" class="link-menu__opcion">Gestionar plantillas</a></div>
+        <div class="menu-lateral__inicio"><a href="index.html" class="link-menu__inicio">Volver a inicio</a></div>
+      </nav>
+      <div class="table-box">
+        <h2>Gestionar trabajadores</h2>
+        <table class="tabla-trabajadores">
+          <caption>Trabajadores</caption>
+          <tr class="tabla-trabajadores__titulo">
+            <th class="apellidos">Apellidos</th>
+            <th class="nombre">Nombre</th>
+            <th class="funcion">Función</th>
+            <th class="turno">Turno</th>
+          </tr>
+          <tr class="tabla-plantillas__fila">
+            <td class="apellidos">Apellidos</td>
+            <td class="nombre">Nombre</td>
+            <td class="funcion">Función</td>
+            <td class="turno">Mañana</td>
+          </tr>
+          <tr class="tabla-plantillas__fila">
+            <td class="apellidos">Apellidos</td>
+            <td class="nombre">Nombre</td>
+            <td class="funcion">Función</td>
+            <td class="turno">Tarde</td>
+          </tr>
+          <tr class="tabla-plantillas__fila">
+            <td class="apellidos">Apellidos</td>
+            <td class="nombre">Nombre</td>
+            <td class="funcion">Función</td>
+            <td class="turno">Mañana</td>
+          </tr>
+          <tr class="tabla-plantillas__fila">
+            <td class="apellidos">+</td>
+            <td class="nombre"></td>
+            <td class="funcion"></td>
+            <td class="turno"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    
+
+    <footer class="footer">
+      <div class="footer__menu">
+        <a class="footer__link" href="#">Accesibilidad</a>
+        <a class="footer__link" href="#">Política de privacidad</a>
+        <a class="footer__link" href="#">Aviso legal</a>
+        <a class="footer__link" href="#">Cookies</a>
+      </div>
+    </footer>
+  </body>
+</html>
+
