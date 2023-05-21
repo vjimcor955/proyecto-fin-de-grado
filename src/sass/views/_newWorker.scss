@@ -1,0 +1,23 @@
+.form-box__new-worker {
+    @include flex(flex, row, center, center, center);
+
+    h2 {
+        color: $titulo;
+    }
+
+    .form-new-worker {
+        width: 85%;
+        @include flex(flex, column, center, center, center);
+        gap: 50px;
+
+        .form-new-worker-campos  {
+            @include flex(flex, row, center, center, center);
+            gap: 200px;
+
+            .form-new-worker__campo{
+                color: $texto;
+                @include flex(flex, column, center, center, flex-start);
+            }
+        }
+    }
+}

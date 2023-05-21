@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="sass/main.scss" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html"><img class="header__logo" alt="logo" src="img/logo.png"></a>
+      <nav class="menu-lateral">
+        <img src="img/icon_menu.png" alt="Icono de menu">
+        <a href="user.html"><img src="img/icon_user.png" alt="Icono de usuario"></a>
+      </nav>
+    </header>
+
+    <div class="new-staff-box">
+      <nav class="menu-lateral">
+        <div class="menu-lateral__opcion"><a href="#" class="link-menu__opcion">Gestionar trabajadores</a></div>
+        <div class="menu-lateral__gestionar">
+          <div class="menu-lateral__opcion"><a href="staffs.html" class="link-menu__seleccion">Gestionar plantillas</a></div>
+          <div class="menu-lateral__subopcion"><a href="newstaff.html" class="link-menu__seleccion">Crear nueva plantilla</a></div>
+          <div class="menu-lateral__subopcion"><a href="editStaff.html" class="link-menu__opcion">Editar plantilla</a></div>
+        </div>
+        <div class="menu-lateral__inicio"><a href="index.html" class="link-menu__inicio">Volver a inicio</a></div>
+      </nav>
+      <div class="new-staff-form-box">
+        <h2>Crear nueva plantilla</h2>
+        <form class="new-staff-form">
+            <div class="new-staff-form__campo">
+              <label for="nombrePlantilla">Nombre Plantilla:</label>
+              <input type="text" name="nombrePlantilla" id="nombrePlantilla">
+            </div>
+            <div class="new-staff-form__campo">
+              <label for="sector">Sector:</label>
+              <input type="text" name="sector" id="sector">
+            </div>
+        </form>
+        <div class="table-box">
+          <table class="tabla-add-trabajadores">
+            <caption>Trabajadores</caption>
+            <tr class="tabla-add-trabajadores__titulo">
+              <th class="id">ID</th>
+              <th class="apellidos">Apellidos</th>
+              <th class="nombre">Nombre</th>
+            </tr>
+            <tr class="tabla-add-trabajadores__fila">
+              <td class="id"> </td> 
+              <td class="apellidos"> </td>
+              <td class="nombre"> </td>
+            </tr>
+            <tr class="tabla-add-trabajadores__fila">
+              <td class="id"> </td>
+              <td class="apellidos"> </td>
+              <td class="nombre"> </td>
+            </tr>
+            <tr class="tabla-add-trabajadores__fila">
+              <td class="id"> </td>
+              <td class="apellidos"> </td>
+              <td class="nombre"> </td>
+            </tr>
+            <tr class="tabla-add-trabajadores__fila">
+              <td class="id"> </td>
+              <td class="apellidos"> </td>
+              <td class="nombre"> </td>
+            </tr>
+            <tr class="tabla-add-trabajadores__fila">
+              <td class="id"> </td>
+              <td class="apellidos"> </td>
+              <td class="nombre"> </td>
+            </tr>
+          </table>
+          <table class="tabla-integrantes-plantilla">
+            <caption>Integrantes plantilla</caption>
+            <tr class="tabla-integrantes-plantilla__titulo">
+              <th class="id">ID</th>
+              <th class="apellidos">Apellidos</th>
+              <th class="nombre">Nombre</th>
+            </tr>
+            <tr class="tabla-integrantes-plantilla__fila">
+              <td class="id"> </td> 
+              <td class="apellidos"> </td>
+              <td class="nombre"> </td>
+            </tr>
+            <tr class="tabla-integrantes-plantilla__fila">
+              <td class="id"> </td>
+              <td class="apellidos"> </td>
+              <td class="nombre"> </td>
+            </tr>
+            <tr class="tabla-integrantes-plantilla__fila">
+              <td class="id"> </td>
+              <td class="apellidos"> </td>
+              <td class="nombre"> </td>
+            </tr>
+            <tr class="tabla-integrantes-plantilla__fila">
+              <td class="id"> </td>
+              <td class="apellidos"> </td>
+              <td class="nombre"> </td>
+            </tr>
+            <tr class="tabla-integrantes-plantilla__fila">
+              <td class="id"> </td>
+              <td class="apellidos"> </td>
+              <td class="nombre"> </td>
+            </tr>
+          </table>
+        </div>
+        <a href="staffs.html" class="button">Crear plantilla</a>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__menu">
+        <a class="footer__link" href="#">Accesibilidad</a>
+        <a class="footer__link" href="#">Política de privacidad</a>
+        <a class="footer__link" href="#">Aviso legal</a>
+        <a class="footer__link" href="#">Cookies</a>
+      </div>
+    </footer>
+  </body>
+</html>
+

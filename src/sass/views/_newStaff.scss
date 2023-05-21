@@ -1,0 +1,77 @@
+.new-staff-box {
+    @include flex(flex, row, center, center, center);
+
+    .new-staff-form-box {
+        width: 85%;
+        height: 64vh;
+        @include flex(flex, column, center, flex-start, center);       
+        color: $texto;
+
+        h2 {
+            color: $titulo;
+            padding: 25px 0px;
+        }
+
+        .new-staff-form {
+            @include flex(flex, row, center, center, center);     
+            gap: 300px;
+            padding: 25px 0px;
+
+            .new-staff-form__campo {
+                @include flex(flex, column, center, flex-start, flex-start);
+                gap: 5px;      
+            }
+        }
+
+        .table-box {
+            width: 75%;
+            @include flex(flex, row, center, center, center);       
+            gap: 50px;
+            padding: 50px 0px;
+
+            .tabla-add-trabajadores, .tabla-integrantes-plantilla {
+                width: 60%;
+
+                caption {
+                    background-color: $oscuro;
+                    color: $titulo;
+                    height: 50px;
+                    padding: 15px 0px;
+                }
+
+                .tabla-add-trabajadores__titulo, .tabla-integrantes-plantilla__titulo {
+                    background-color: $principal;
+                    color: $oscuro;
+                    height: 40px;
+
+                    th.id {
+                        width: 10%;
+                    }
+
+                    th.apelidos {
+                        width: 50%;
+                    }
+
+                    th.nombre {
+                        width: 30%;
+                    }
+                }
+
+                .tabla-add-trabajadores__fila, .tabla-integrantes-plantilla__fila {
+                    text-align: center;
+                    color: $texto;
+                    height: 35px;
+
+
+                    td.id, td.nombre {
+                        background-color: $oscuro;
+                    }
+
+                    td.apellidos {
+                        background-color: $claro;
+                    }
+                }
+            }
+        }
+    }
+}   

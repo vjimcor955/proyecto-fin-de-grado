@@ -20,7 +20,7 @@
             padding: 10px 0px;
 
             .campos-registro__campo {
-                @include flex(flex, column, center, center, center);
+                @include flex(flex, column, center, center, flex-start);
             }
         }
 

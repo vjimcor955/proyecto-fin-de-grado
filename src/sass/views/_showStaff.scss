@@ -1,0 +1,62 @@
+.show-staffs-box {
+    @include flex(flex, row, center, center, center);
+    
+    .table-box {
+        width: 85%;
+        height: 64vh;
+        @include flex(flex, column, center, center, center);
+
+        h2 {
+            color: $titulo;
+            padding: 35px 0px;
+        }
+
+        .tabla-mostrar-plantilla {
+            width: 60%;
+
+            caption {
+                background-color: $oscuro;
+                color: $titulo;
+                height: 50px;
+                padding: 15px 0px;
+            }
+
+            .tabla-mostrar-plantilla__titulo {
+                background-color: $principal;
+                color: $oscuro;
+                height: 40px;
+
+                th.id {
+                    width: 10%;
+                }
+
+                th.apellidos {
+                    width: 45%;
+                }
+
+                th.nombre {
+                    width: 25%;
+                }
+
+                th.funcion {
+                    width: 30%;
+                }
+            }
+
+            .tabla-mostrar-plantilla__fila {
+                text-align: center;
+                color: $texto;
+                height: 35px;
+
+
+                td.id, td.nombre {
+                    background-color: $oscuro;
+                }
+
+                td.apellidos, td.funcion {
+                    background-color: $claro;
+                }
+            }
+        }
+    }
+}
