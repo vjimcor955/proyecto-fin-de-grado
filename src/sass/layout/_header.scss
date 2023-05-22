@@ -14,12 +14,14 @@ header.header {
         background-color: $claro;
         width: 100%;
         height: fit-content;
-        padding: 10px 550px;
-        @include flex(flex, row, center, space-between, center);
+        padding: 7px 0px;
+        @include flex(flex, row, center, center, center);
+        gap: 45px;
         
         a.menu__link {
             color: $texto;
-            text-decoration: none;     
+            text-decoration: none; 
+            // font-size: 1vw;    
         }
     
         img {

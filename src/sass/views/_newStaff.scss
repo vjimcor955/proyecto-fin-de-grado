@@ -4,18 +4,19 @@
     .new-staff-form-box {
         width: 85%;
         height: 64vh;
-        @include flex(flex, column, center, flex-start, center);       
+        @include flex(flex, column, center, center, center);       
         color: $texto;
+        gap: 30px;
 
         h2 {
             color: $titulo;
-            padding: 25px 0px;
+            // padding: 25px 0px;
         }
 
         .new-staff-form {
             @include flex(flex, row, center, center, center);     
             gap: 300px;
-            padding: 25px 0px;
+            // padding: 25px 0px;
 
             .new-staff-form__campo {
                 @include flex(flex, column, center, flex-start, flex-start);
@@ -27,7 +28,7 @@
             width: 75%;
             @include flex(flex, row, center, center, center);       
             gap: 50px;
-            padding: 50px 0px;
+            // padding: 50px 0px;
 
             .tabla-add-trabajadores, .tabla-integrantes-plantilla {
                 width: 60%;

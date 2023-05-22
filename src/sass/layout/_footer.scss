@@ -11,6 +11,13 @@ footer.footer {
         h3 {
             color: $titulo;
             padding: 50px 0px;
+            font-size: 1.2vw;
+        }
+        
+        input.campo {
+            padding: 5px 5px;
+            background-color: lightgoldenrodyellow;
+            border: none;
         }
 
         .button {
@@ -24,12 +31,35 @@ footer.footer {
         width: 100%;
         background-color: $claro;
         @include flex(flex, row, center, center, center);
-        gap: 125px;
-        padding: 35px 0px;
+        gap: 100px;
+        padding: 30px 0px;
 
         a.footer__link {
             color: $texto;
-            text-decoration: none;     
+            text-decoration: none; 
+            // font-size: 1vw;    
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    footer.footer {
+
+        .footer__newsletter {
+    
+            h3 {
+                font-size: 2.5vw;
+            }
+
+            .button {
+                font-size: 1.7vw;
+            }
+        }
+
+        .footer__menu {
+            @include flex(flex, column, center, center, center);
+            padding: 25px 0px;
+            gap: 40px;
         }
     }
 }
