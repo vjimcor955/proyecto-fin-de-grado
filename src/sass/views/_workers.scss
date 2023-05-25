@@ -1,10 +1,10 @@
 .workers-box {
+    height: 600px;
     @include flex(flex, row, center, center, center);
     
     .table-box {
         width: 85%;
-        height: 64vh;
-        @include flex(flex, column, center, flex-start, center);
+        @include flex(flex, column, center, center, center);
 
         h2 {
             color: $titulo;
@@ -12,7 +12,7 @@
         }
 
         .tabla-trabajadores {
-            width: 60%;
+            width: 75%;
 
             caption {
                 background-color: $oscuro;
@@ -57,6 +57,16 @@
                     background-color: $claro;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .workers-box .table-box {
+        width: 95%;
+
+        .tabla-trabajadores {
+            width: inherit;
         }
     }
 }

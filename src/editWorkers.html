@@ -9,23 +9,26 @@
   <body>
     <header class="header">
       <a href="index.html"><img class="header__logo" alt="logo" src="img/logo.png"></a>
-      <nav class="menu-lateral">
-        <img src="img/icon_menu.png" alt="Icono de menu">
+      <nav class="header__menu-lateral">
+        <label for="icono-menu-lateral">
+          <img src="img/icon_menu.png" alt="Icono de menu" id="icono-menu">
+        </label>
+        <input type="checkbox" name="menu-lateral" id="checkbox-menu-lateral">    
         <a href="user.html"><img src="img/icon_user.png" alt="Icono de usuario"></a>
       </nav>
     </header>
 
     <div class="edit-workers-box">
-      <nav class="menu-lateral">
-        <div class="menu-lateral__gestionar">
-            <div class="menu-lateral__opcion"><a href="workers.html" class="link-menu__seleccion">Gestionar trabajadores</a></div>
-            <div class="menu-lateral__subopcion"><a href="#" class="link-menu__opcion">Registrar nuevo trabajador</a></div>
-            <div class="menu-lateral__subopcion"><a href="editWorkers.html" class="link-menu__seleccion">Editar trabajadores</a></div>
-            <div class="menu-lateral__subopcion"><a href="#" class="link-menu__opcion">Eliminar trabajadores</a></div>
-            <div class="menu-lateral__subopcion"><a href="workers.html" class="link-menu__opcion">Guardar trabajadores</a></div>
-        </div>
-        <div class="menu-lateral__opcion"><a href="staffs.html" class="link-menu__opcion">Gestionar plantillas</a></div>
-        <div class="menu-lateral__inicio"><a href="index.html" class="link-menu__inicio">Volver a inicio</a></div>
+      <nav class="menu-lateral" id="menu-lateral">
+        <ul class="menu-lateral__gestionar">
+            <li class="menu-lateral__opcion"><a href="workers.html" class="link-menu__seleccion">Gestionar trabajadores</a></li>
+            <li class="menu-lateral__subopcion"><a href="newWorker.html" class="link-menu__opcion">Registrar nuevo trabajador</a></li>
+            <li class="menu-lateral__subopcion"><a href="editWorkers.html" class="link-menu__seleccion">Editar trabajadores</a></li>
+            <li class="menu-lateral__subopcion"><a href="#" class="link-menu__opcion">Eliminar trabajador</a></li>
+            <li class="menu-lateral__subopcion"><a href="workers.html" class="link-menu__opcion">Guardar trabajadores</a></li>
+            <li class="menu-lateral__opcion"><a href="staffs.html" class="link-menu__opcion">Gestionar plantillas</a></li>
+            <li class="menu-lateral__inicio"><a href="index.html" class="link-menu__inicio">Volver a inicio</a></li>
+        </ul>
       </nav>
       <div class="table-box">
         <h2>Editar trabajadores</h2>

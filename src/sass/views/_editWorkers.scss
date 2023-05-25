@@ -1,9 +1,9 @@
 .edit-workers-box {
+    height: 600px;
     @include flex(flex, row, center, center, center);
     
     .table-box {
         width: 85%;
-        height: 64vh;
         @include flex(flex, column, center, flex-start, center);
 
         h2 {
@@ -66,6 +66,16 @@
                 color: $texto;
                 background-color: rgba(0, 0, 0, 0);
             }
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .edit-workers-box .table-box {
+        width: 95%;
+
+        .tabla-editar-trabajadores {
+            width: inherit;
         }
     }
 }

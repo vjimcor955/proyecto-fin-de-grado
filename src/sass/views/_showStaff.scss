@@ -1,9 +1,9 @@
 .show-staffs-box {
+    height: 600px;
     @include flex(flex, row, center, center, center);
     
     .table-box {
         width: 85%;
-        height: 64vh;
         @include flex(flex, column, center, center, center);
 
         h2 {
@@ -57,6 +57,16 @@
                     background-color: $claro;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .show-staffs-box .table-box {
+        width: 95%;
+
+        .tabla-mostrar-plantilla {
+            width: inherit;
         }
     }
 }

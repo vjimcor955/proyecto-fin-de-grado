@@ -1,4 +1,5 @@
 .form-box__new-worker {
+    height: 600px;
     @include flex(flex, row, center, center, center);
 
     h2 {
@@ -17,6 +18,20 @@
             .form-new-worker__campo{
                 color: $texto;
                 @include flex(flex, column, center, center, flex-start);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .form-box__new-worker {
+        width: 95%;
+
+        .form-new-worker {
+            width: inherit;
+
+            a {
+                font-size: 1.7vw;
             }
         }
     }

@@ -1,6 +1,6 @@
 .form-box__login {
     width: 100%;
-    height: 65vh;
+    height: 600px;
     @include flex(flex, column, center, center, center);    
 
     form > fieldset {
@@ -18,6 +18,28 @@
             font-size: larger;
         }
 
+        .campo-login {
+            @include flex(flex, column, center, space-between, flex-start);
+            gap: 10px;
+
+            label {
+                width: 175px;
+            }
+        }
+
+        .button {
+            width: fit-content;
+            background-color: $principal;
+        }
+
+        input {
+            width: 175px;
+            background-color: lightgoldenrodyellow;
+            border: none;
+            padding: 5px 5px;
+            font-size: 1vw
+        }
+
         .form-box-login__botones {
             @include flex(flex, column, center, center, center);
             padding-top: 35px; 
@@ -25,7 +47,20 @@
             
             a {
                 color: $texto;
+                font-size: 1vw;
             }
         }  
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .form-box__login form > fieldset {
+
+        .form-box-login__botones {
+            
+            input, a {
+                font-size: 2vw
+            }
+        }
     }
 }

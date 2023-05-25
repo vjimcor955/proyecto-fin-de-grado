@@ -10,16 +10,15 @@
 @import 'layout/footer';
 
 @import 'components/buttons';
-@import 'components/sideMenu';
 
 @import "views/home";
 @import "views/login";
 @import "views/register";
 @import "views/user";
-@import "views/staffs";
-@import "views/editStaff";
 @import "views/workers";
 @import "views/editWorkers";
-@import "views/newStaff";
+@import "views/staffs";
+@import "views/editStaff";
 @import "views/newWorker";
+@import "views/newStaff";
 @import "views/showStaff";
